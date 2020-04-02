@@ -54,7 +54,9 @@ async componentDidMount() {
         <Owner>
           <Link to="/">Voltar aos repositórios</Link>
           <img src={repository.owner.avatar_url} alt={repository.owner.login}/>
-          <h1>{repository.name}</h1>
+          <a href={repository.html_url}>
+            <h1>{repository.name}</h1>
+          </a>
           <p>{repository.description}</p>
         </Owner>
 
